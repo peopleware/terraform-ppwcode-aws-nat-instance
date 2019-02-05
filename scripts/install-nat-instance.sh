@@ -8,7 +8,7 @@ VPC_CIDR="${vpc_cidr}"
 
 # Enable ipv4 ip forwarding
 echo net.ipv4.ip_forward=1 > /etc/sysctl.d/60-ip_forward.conf
-/usr/sbin/service procps start
+/usr/sbin/service procps restart
 
 # Enable NAT
 mkdir -p /etc/network/if-up.d/
